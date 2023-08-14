@@ -43,6 +43,7 @@ jobs:
       with:
         file: vyos-build/build/vyos-${{ env.RELEASE_VERSION }}-amd64.iso
         tag: vyos-${{ env.RELEASE_VERSION }}
+        repo_token: {{ github.token }}
         overwrite: true
         file_glob: true
   
